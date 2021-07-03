@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      display: inline;
+    }
+    .dropbtn {
+      background-color: #acc2ac;
+      color: white;
+      padding: 30px;
+      width: 1000px;
+      font-size: 20px;
+      border: none;
+      cursor: pointer;
+      text-align: left;
+    }
+    
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: acc2ac;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(168, 160, 160, 0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: rgb(145, 134, 134);
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown-content a:hover {background-color: #f1f1f1}
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+    .dropdown:hover .dropbtn {
+      background-color: acc2ac;
+    }
+    
+        </style>
+</head>
+<body>
+    
+    <div class="dropdown">
+      <button class="dropbtn">THIBAULT CHARPENTIER</button>
+      <div class="dropdown-content">
+      <a href="#">TRAVELS</a>
+      <a href="#">COMMISION</a>
+      <a href="#">INTERIORS</a>
+      <a href="#">PERSONAL</a>
+      <a href="#">CONTACTS</a>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="column">
+        <img src="E:\7.jpg">
+        <img src="E:\8.jpg">
+        <img src="E:\9.jpg">
+        <img src="E:\10.jpg">
+      </div>
+      <div class="column">
+        <img src="E:\11.jpg">
+        <img src="E:\12.jpg">
+        <img src="E:\13.jpg">
+        <img src="E:\14.jpg">
+        <img src="E:\15.jpg">
+
+      </div>
+        
+    </div>
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+    
+    /* Create two equal columns that sits next to each other */
+    .column {
+      flex: 50%;
+      padding: 0 4px;
+    }
+    
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+    }
+  </body>
